@@ -1,11 +1,44 @@
 {
-  "name": "api",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nikola Hristov <nikola@nikolahristov.tech> (https://nikolahristov.tech/)",
-  "license": "MIT"
+	"name": "@api/now-playing_cards",
+	"version": "0.0.1",
+	"private": false,
+	"homepage": "https://github.com/NowPlayingCards/API#readme",
+	"bugs": {
+		"url": "https://github.com/NowPlayingCards/API/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NowPlayingCards/API.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
+	"type": "module",
+	"main": "./Target/Index.js",
+	"types": "./Target/Index.d.ts",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"dependencies": {
+		"@common/now-playing_cards": "0.0.1",
+		"@solid-primitives/websocket": "1.2.0",
+		"itty-router": "4.0.23"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "4.20231025.0",
+		"@miniflare/tre": "3.0.0-next.13",
+		"@types/dotenv": "8.2.0",
+		"@typescript-eslint/eslint-plugin": "6.9.0",
+		"@typescript-eslint/parser": "6.9.0",
+		"eslint": "8.52.0",
+		"miniflare": "3.20231025.0",
+		"typescript-esbuild": "0.3.1",
+		"wrangler": "3.15.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
