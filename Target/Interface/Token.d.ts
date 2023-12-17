@@ -3,5 +3,5 @@
  *
  */
 export default interface Type {
-    access_token: string;
+	access_token: string;
 }

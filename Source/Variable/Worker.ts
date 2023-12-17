@@ -2,11 +2,9 @@
  * @module Worker
  *
  */
-export default {
+export default ({
 	fetch: async (...[Request, Environment]: Parameters<Type["fetch"]>) =>
-		await (
-			await import("itty-router/Router")
-		)
+		await (await import("itty-router/Router"))
 			.Router()
 			.get("/Spotify", async (Request, Environment) => {
 				const { searchParams, origin, pathname } = new URL(Request.url);
@@ -27,8 +25,8 @@ export default {
 							(await crypto.subtle.generateKey(
 								{ name: "AES-GCM", length: 256 },
 								true,
-								["encrypt", "decrypt"]
-							)) as CryptoKey
+								["encrypt", "decrypt"],
+							)) as CryptoKey,
 						)) as JsonWebKey
 					).k ??
 					"";
@@ -36,7 +34,7 @@ export default {
 				const Base = new URL(
 					searchParams.get("Base") ??
 						State?.split("|")[2] ??
-						`${origin}${pathname}`
+						`${origin}${pathname}`,
 				);
 
 				const Code = searchParams.get("code");
@@ -51,11 +49,11 @@ export default {
 								Authorization: `Basic ${(
 									await import("node:buffer")
 								).Buffer.from(
-									`${Environment.Identifier}:${Environment.Secret}`
+									`${Environment.Identifier}:${Environment.Secret}`,
 								).toString("base64")}`,
 							},
 							body: `grant_type=authorization_code&code=${Code}&redirect_uri=${encodeURIComponent(
-								`${Current.origin}${Current.pathname}`
+								`${Current.origin}${Current.pathname}`,
 							)}&state=${Identifier}|${Key}|${Base}`,
 						})
 					).json()) satisfies Token;
@@ -73,9 +71,9 @@ export default {
 										{
 											Token: access_token,
 										},
-										Key
-									)
-								)
+										Key,
+									),
+								),
 							);
 						} catch (_Error) {}
 					}
@@ -88,8 +86,8 @@ export default {
 						`https://accounts.spotify.com/authorize?client_id=${
 							Environment.Identifier
 						}&response_type=code&redirect_uri=${encodeURIComponent(
-							`${Current.origin}${Current.pathname}`
-						)}&scope=user-read-email user-read-playback-state user-read-currently-playing&state=${Identifier}|${Key}|${Base}`
+							`${Current.origin}${Current.pathname}`,
+						)}&scope=user-read-email user-read-playback-state user-read-currently-playing&state=${Identifier}|${Key}|${Base}`,
 					);
 				}
 			})
@@ -101,11 +99,11 @@ export default {
 						{
 							Error: "Not Found.",
 						},
-						404
-					)
+						404,
+					),
 			)
 			.handle(Request, Environment),
-} satisfies Type as Type;
+} satisfies Type as Type);
 
 import type Token from "../Interface/Token.js";
 import type Type from "../Interface/Worker.js";
