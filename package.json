@@ -32,7 +32,7 @@
 		"@miniflare/tre": "3.0.0-next.14",
 		"@types/dotenv": "8.2.0",
 		"@typescript-eslint/eslint-plugin": "6.15.0",
-		"@typescript-eslint/parser": "6.14.0",
+		"@typescript-eslint/parser": "6.15.0",
 		"eslint": "8.56.0",
 		"miniflare": "3.20231030.4",
 		"typescript-esbuild": "0.3.3",
