@@ -6,7 +6,7 @@ export default interface Type extends ExportedHandler<Environment> {
 	fetch: (
 		Request: Request,
 		Environment: Environment,
-		Context: ExecutionContext,
+		Context: ExecutionContext
 	) => Promise<Response>;
 }
 
