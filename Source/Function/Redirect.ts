@@ -2,8 +2,8 @@
  * @module Redirect
  *
  */
-export default (async (...[URL = "", Status = 302]: Parameters<Type>) =>
-	Response.redirect(URL, Status)) satisfies Type as Type;
+export default ((async (...[URL = "", Status = 302]: Parameters<Type>) =>
+	Response.redirect(URL, Status)) satisfies Type as Type);
 
 import type Type from "../Interface/Redirect.js";
 
