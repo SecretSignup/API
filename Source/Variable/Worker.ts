@@ -2,7 +2,7 @@
  * @module Worker
  *
  */
-export default ({
+export default {
 	fetch: async (...[Request, Environment]: Parameters<Type["fetch"]>) =>
 		await (await import("itty-router/Router"))
 			.Router()
@@ -103,7 +103,7 @@ export default ({
 					),
 			)
 			.handle(Request, Environment),
-} satisfies Type as Type);
+} satisfies Type as Type;
 
 import type Token from "../Interface/Token.js";
 import type Type from "../Interface/Worker.js";
