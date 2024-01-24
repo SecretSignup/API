@@ -75,7 +75,9 @@ export default {
 									),
 								),
 							);
-						} catch (_Error) {}
+						} catch (_Error) {
+							console.log(_Error);
+						}
 					}
 
 					Base.searchParams.append("Identifier", Identifier);
