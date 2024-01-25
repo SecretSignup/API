@@ -47,7 +47,7 @@ export default {
 								"Content-Type":
 									"application/x-www-form-urlencoded",
 								Authorization: `Basic ${(
-									await import("node:buffer")
+									await import("buffer")
 								).Buffer.from(
 									`${Environment.Identifier}:${Environment.Secret}`,
 								).toString("base64")}`,
