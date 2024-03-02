@@ -36,7 +36,11 @@
 		"eslint": "8.57.0",
 		"miniflare": "3.20240223.0",
 		"typescript-esbuild": "0.3.10",
+<<<<<<< HEAD
 		"wrangler": "3.30.0"
+=======
+		"wrangler": "3.30.1"
+>>>>>>> 130d7c2da9c24a25c5300afd01678178c7100cd6
 	},
 	"publishConfig": {
 		"access": "public"
