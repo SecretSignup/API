@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@common/now-playing_cards": "0.0.1",
-		"@solid-primitives/websocket": "1.2.1",
+		"@solid-primitives/websocket": "1.2.2",
 		"itty-router": "4.0.27"
 	},
 	"devDependencies": {
