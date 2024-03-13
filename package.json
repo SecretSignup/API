@@ -25,18 +25,18 @@
 	"dependencies": {
 		"@common/now-playing_cards": "0.0.1",
 		"@solid-primitives/websocket": "1.2.2",
-		"itty-router": "4.0.27"
+		"itty-router": "4.1.1"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20240222.0",
+		"@cloudflare/workers-types": "4.20240312.0",
 		"@miniflare/tre": "3.0.0-next.14",
 		"@types/dotenv": "8.2.0",
 		"@typescript-eslint/eslint-plugin": "7.2.0",
-		"@typescript-eslint/parser": "7.1.1",
+		"@typescript-eslint/parser": "7.2.0",
 		"eslint": "8.57.0",
-		"miniflare": "3.20240304.0",
+		"miniflare": "3.20240304.1",
 		"typescript-esbuild": "0.4.0",
-		"wrangler": "3.32.0"
+		"wrangler": "3.33.0"
 	},
 	"publishConfig": {
 		"access": "public"
