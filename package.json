@@ -26,10 +26,10 @@
 	"dependencies": {
 		"@common/now-playing_cards": "0.0.1",
 		"@solid-primitives/websocket": "1.2.2",
-		"itty-router": "5.0.5"
+		"itty-router": "5.0.8"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20240329.0",
+		"@cloudflare/workers-types": "4.20240402.0",
 		"@miniflare/tre": "3.0.0-next.14",
 		"@playform/build": "0.0.2",
 		"@types/dotenv": "8.2.0",
@@ -37,7 +37,7 @@
 		"@typescript-eslint/parser": "7.5.0",
 		"eslint": "8.57.0",
 		"miniflare": "3.20240329.0",
-		"wrangler": "3.42.0"
+		"wrangler": "3.44.0"
 	},
 	"optionalDependencies": {
 		"@playform/document": "0.0.2"
