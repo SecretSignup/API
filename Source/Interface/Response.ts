@@ -2,7 +2,7 @@
  * @module Response
  *
  */
-export default interface Type {
+export default interface Interface {
 	(Message?: unknown, Status?: number): Promise<Response>;
 }
 

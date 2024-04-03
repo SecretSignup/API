@@ -2,7 +2,7 @@
  * @module Worker
  *
  */
-export default interface Type {
+export default interface Interface {
 	Identifier: string;
 	Secret: string;
 	Token: KVNamespace;

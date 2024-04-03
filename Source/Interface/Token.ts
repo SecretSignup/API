@@ -2,6 +2,6 @@
  * @module Worker
  *
  */
-export default interface Type {
+export default interface Interface {
 	access_token: string;
 }

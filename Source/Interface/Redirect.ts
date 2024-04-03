@@ -2,7 +2,7 @@
  * @module Redirect
  *
  */
-export default interface Type {
+export default interface Interface {
 	(URL?: string, Status?: number): Promise<Response>;
 }
 
