@@ -21,7 +21,7 @@
 	"types": "./Target/Index.d.ts",
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts'"
+		"Build": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
 		"@common/now-playing_cards": "0.0.1",
