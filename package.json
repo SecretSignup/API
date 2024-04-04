@@ -20,7 +20,6 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
@@ -31,14 +30,13 @@
 	"devDependencies": {
 		"@cloudflare/workers-types": "4.20240403.0",
 		"@miniflare/tre": "3.0.0-next.14",
-		"@playform/build": "0.0.2",
+		"@playform/build": "0.0.5",
 		"@types/dotenv": "8.2.0",
 		"@typescript-eslint/eslint-plugin": "7.5.0",
 		"@typescript-eslint/parser": "7.5.0",
 		"eslint": "8.57.0",
 		"miniflare": "3.20240403.0",
-		"wrangler": "3.46.0",
-		"@playform/document": "0.0.3"
+		"wrangler": "3.46.0"
 	},
 	"publishConfig": {
 		"access": "public"
