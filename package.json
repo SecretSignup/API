@@ -37,9 +37,7 @@
 		"@typescript-eslint/parser": "7.5.0",
 		"eslint": "8.57.0",
 		"miniflare": "3.20240403.0",
-		"wrangler": "3.46.0"
-	},
-	"optionalDependencies": {
+		"wrangler": "3.46.0",
 		"@playform/document": "0.0.3"
 	},
 	"publishConfig": {
