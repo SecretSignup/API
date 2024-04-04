@@ -40,7 +40,7 @@
 		"wrangler": "3.44.0"
 	},
 	"optionalDependencies": {
-		"@playform/document": "0.0.2"
+		"@playform/document": "0.0.3"
 	},
 	"publishConfig": {
 		"access": "public"
