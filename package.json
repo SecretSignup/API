@@ -29,7 +29,7 @@
 		"itty-router": "5.0.9"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20240404.0",
+		"@cloudflare/workers-types": "4.20240405.0",
 		"@miniflare/tre": "3.0.0-next.14",
 		"@playform/build": "0.0.5",
 		"@playform/document": "0.0.6",
@@ -38,7 +38,7 @@
 		"@typescript-eslint/parser": "7.5.0",
 		"eslint": "8.57.0",
 		"miniflare": "3.20240404.0",
-		"wrangler": "3.47.1"
+		"wrangler": "3.48.0"
 	},
 	"publishConfig": {
 		"access": "public"

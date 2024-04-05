@@ -2,7 +2,7 @@
  * @module Worker
  *
  */
-export default interface Type extends ExportedHandler<Environment> {
+export default interface Interface extends ExportedHandler<Environment> {
 	fetch: (
 		Request: Request,
 		Environment: Environment,
