@@ -32,10 +32,7 @@
 		"@cloudflare/workers-types": "4.20240404.0",
 		"@miniflare/tre": "3.0.0-next.14",
 		"@playform/build": "0.0.5",
-<<<<<<< HEAD
 		"@playform/document": "0.0.6",
-=======
->>>>>>> ded2a83b13c7addbbdb1008ba304c1428af053ab
 		"@types/dotenv": "8.2.0",
 		"@typescript-eslint/eslint-plugin": "7.5.0",
 		"@typescript-eslint/parser": "7.5.0",
@@ -43,12 +40,6 @@
 		"miniflare": "3.20240404.0",
 		"wrangler": "3.47.1"
 	},
-<<<<<<< HEAD
-=======
-	"optionalDependencies": {
-		"@playform/document": "0.0.6"
-	},
->>>>>>> ded2a83b13c7addbbdb1008ba304c1428af053ab
 	"publishConfig": {
 		"access": "public"
 	}
