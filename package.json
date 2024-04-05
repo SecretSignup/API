@@ -2,7 +2,7 @@
 	"name": "@api/now-playing_cards",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "https://github.com/NowPlayingCards/API#ReadMe",
+	"homepage": "https://github.com/NowPlayingCards/API#readme",
 	"bugs": {
 		"url": "https://github.com/NowPlayingCards/API/issues"
 	},
