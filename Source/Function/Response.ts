@@ -10,7 +10,7 @@ export default (async (...[Message = null, Status = 200]: Parameters<Type>) =>
 		},
 	})) satisfies Type as Type;
 
-import type Type from "../Interface/Response.js";
+import type Type from "@Interface/Response.js";
 
 export const { Response } = await import(
 	"@cloudflare/workers-types/experimental/index.js"

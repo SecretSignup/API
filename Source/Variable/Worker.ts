@@ -107,8 +107,8 @@ export default {
 			.handle(Request, Environment),
 } satisfies Type as Type;
 
-import type Token from "../Interface/Token.js";
-import type Type from "../Interface/Worker.js";
+import type Token from "@Interface/Token.js";
+import type Type from "@Interface/Worker.js";
 
 import type { JsonWebKey } from "@cloudflare/workers-types/experimental/index.js";
 

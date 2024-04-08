@@ -17,4 +17,4 @@ import type {
 	Response,
 } from "@cloudflare/workers-types/experimental/index.js";
 
-import type Environment from "../Interface/Environment.js";
+import type Environment from "@Interface/Environment.js";
