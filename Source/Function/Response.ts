@@ -2,15 +2,17 @@
  * @module Response
  *
  */
-export default (async (...[Message = null, Status = 200]: Parameters<Type>) =>
+export default (async (
+	...[Message = null, Status = 200]: Parameters<Interface>
+) =>
 	new Response(JSON.stringify(Message), {
 		status: Status,
 		headers: {
 			"Content-Type": "application/json;charset=utf-8",
 		},
-	})) satisfies Type as Type;
+	})) satisfies Interface as Interface;
 
-import type Type from "@Interface/Response.js";
+import type Interface from "@Interface/Response.js";
 
 export const { Response } = await import(
 	"@cloudflare/workers-types/experimental/index.js"
