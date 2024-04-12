@@ -13,7 +13,7 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Nikola R. Hristov",
-		"email": "nikola@playform.cloud",
+		"email": "nikola@nikolahristov.tech",
 		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
@@ -37,7 +37,7 @@
 		"@typescript-eslint/eslint-plugin": "7.6.0",
 		"@typescript-eslint/parser": "7.6.0",
 		"eslint": "9.0.0",
-		"miniflare": "3.20240405.0",
+		"miniflare": "3.20240405.1",
 		"wrangler": "3.50.0"
 	},
 	"publishConfig": {
