@@ -55,10 +55,10 @@ export default {
 								).toString("base64")}`,
 							},
 							body: `grant_type=authorization_code&code=${Code}&redirect_uri=${encodeURIComponent(
-								`${Current.origin}${Current.pathname}`
+								`${origin}${pathname}`
 							)}&state=${Identifier}|${Key}|${Base}`,
 						})
-					).json()) satisfies Token;
+					).json()) as Token;
 
 					if (access_token) {
 						try {
@@ -90,7 +90,7 @@ export default {
 						`https://accounts.spotify.com/authorize?client_id=${
 							Environment.Identifier
 						}&response_type=code&redirect_uri=${encodeURIComponent(
-							`${Current.origin}${Current.pathname}`
+							`${origin}${pathname}`
 						)}&scope=user-read-email user-read-playback-state user-read-currently-playing&state=${Identifier}|${Key}|${Base}`
 					);
 				}
@@ -109,8 +109,8 @@ export default {
 			.handle(Request, Environment),
 } satisfies Interface as Interface;
 
-import type Token from "@Interface/Token.js";
-import type Interface from "@Interface/Worker.js";
+import type Token from "../Interface/Token.js";
+import type Interface from "../Interface/Worker.js";
 
 import type { JsonWebKey } from "@cloudflare/workers-types/experimental/index.js";
 
