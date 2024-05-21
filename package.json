@@ -33,7 +33,7 @@
 		"@playform/build": "0.0.8",
 		"@playform/document": "0.0.6",
 		"@types/dotenv": "8.2.0",
-		"@typescript-eslint/eslint-plugin": "7.9.0",
+		"@typescript-eslint/eslint-plugin": "7.10.0",
 		"@typescript-eslint/parser": "7.9.0",
 		"eslint": "9.3.0",
 		"miniflare": "3.20240512.0",
