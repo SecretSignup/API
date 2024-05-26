@@ -1,5 +1,5 @@
 {
-	"name": "@api/now-playing_cards",
+	"name": "@api/secret-signup",
 	"version": "0.0.1",
 	"private": false,
 	"homepage": "HTTPS://GitHub.Com/NowPlayingCards/API#readme",
@@ -24,7 +24,7 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@common/now-playing_cards": "0.0.1",
+		"@common/secret-signup": "0.0.1",
 		"@solid-primitives/websocket": "1.2.2",
 		"itty-router": "5.0.17"
 	},

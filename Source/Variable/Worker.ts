@@ -4,9 +4,7 @@
  */
 export default {
 	fetch: async (...[Request, Environment]: Parameters<Interface["fetch"]>) =>
-		await (
-			await import("itty-router/Router")
-		)
+		await (await import("itty-router/Router"))
 			.Router()
 			.get("/Spotify", async (Request, Environment) => {
 				const { searchParams, origin, pathname } = new URL(Request.url);
@@ -27,8 +25,8 @@ export default {
 							(await crypto.subtle.generateKey(
 								{ name: "AES-GCM", length: 256 },
 								true,
-								["encrypt", "decrypt"]
-							)) as CryptoKey
+								["encrypt", "decrypt"],
+							)) as CryptoKey,
 						)) as JsonWebKey
 					).k ??
 					"";
@@ -36,7 +34,7 @@ export default {
 				const Base = new URL(
 					searchParams.get("Base") ??
 						State?.split("|")[2] ??
-						`${origin}${pathname}`
+						`${origin}${pathname}`,
 				);
 
 				const Code = searchParams.get("code");
@@ -51,11 +49,11 @@ export default {
 								Authorization: `Basic ${(
 									await import("buffer")
 								).Buffer.from(
-									`${Environment.Identifier}:${Environment.Secret}`
+									`${Environment.Identifier}:${Environment.Secret}`,
 								).toString("base64")}`,
 							},
 							body: `grant_type=authorization_code&code=${Code}&redirect_uri=${encodeURIComponent(
-								`${origin}${pathname}`
+								`${origin}${pathname}`,
 							)}&state=${Identifier}|${Key}|${Base}`,
 						})
 					).json()) as Token;
@@ -67,15 +65,15 @@ export default {
 								JSON.stringify(
 									await (
 										await import(
-											"@common/now-playing_cards/Target/Function/Encrypt.js"
+											"@common/secret-signup/Target/Function/Encrypt.js"
 										)
 									).default(
 										{
 											Token: access_token,
 										},
-										Key
-									)
-								)
+										Key,
+									),
+								),
 							);
 						} catch (_Error) {
 							console.log(_Error);
@@ -90,8 +88,8 @@ export default {
 						`https://accounts.spotify.com/authorize?client_id=${
 							Environment.Identifier
 						}&response_type=code&redirect_uri=${encodeURIComponent(
-							`${origin}${pathname}`
-						)}&scope=user-read-email user-read-playback-state user-read-currently-playing&state=${Identifier}|${Key}|${Base}`
+							`${origin}${pathname}`,
+						)}&scope=user-read-email user-read-playback-state user-read-currently-playing&state=${Identifier}|${Key}|${Base}`,
 					);
 				}
 			})
@@ -103,8 +101,8 @@ export default {
 						{
 							Error: "Not Found.",
 						},
-						404
-					)
+						404,
+					),
 			)
 			.handle(Request, Environment),
 } satisfies Interface as Interface;

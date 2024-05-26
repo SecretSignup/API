@@ -1,10 +1,10 @@
-name = "api-nowplayingcard"
+name = "api-secret-signup"
 main = "./Target/Index.js"
 account_id = "ecc5b1147fe2b96b423abb0717c0a395"
 compatibility_date = "2023-05-18"
 compatibility_flags = ["nodejs_compat"]
 keep_vars = true
-route = { pattern = "api.now-playing.cards", custom_domain = true, zone_name = "now-playing.cards" }
+route = { pattern = "api.secret-signup.com", custom_domain = true, zone_name = "secret-signup.com" }
 send_metrics = false
 tsconfig = "./tsconfig.json"
 workers_dev = false
