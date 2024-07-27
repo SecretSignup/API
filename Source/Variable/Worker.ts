@@ -4,7 +4,9 @@
  */
 export default {
 	fetch: async (...[Request, Environment]: Parameters<Interface["fetch"]>) =>
-		await (await import("itty-router/Router"))
+		await (
+			await import("itty-router/Router")
+		)
 			.Router()
 			.get("/Spotify", async (Request, Environment) => {
 				const { searchParams, origin, pathname } = new URL(Request.url);
