@@ -26,15 +26,15 @@
 	"dependencies": {
 		"@common/secret-signup": "0.0.1",
 		"@solid-primitives/websocket": "1.2.2",
-		"itty-router": "5.0.17"
+		"itty-router": "6.0.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20240725.0",
+		"@cloudflare/workers-types": "4.20240729.0",
 		"@playform/build": "0.1.2",
 		"@types/dotenv": "8.2.0",
 		"eslint": "9.8.0",
-		"miniflare": "3.20240718.1",
-		"wrangler": "3.67.1"
+		"miniflare": "3.20240725.0",
+		"wrangler": "3.68.0"
 	},
 	"publishConfig": {
 		"access": "public",
