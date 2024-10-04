@@ -1,3 +1,8 @@
+import type { JsonWebKey } from "@cloudflare/workers-types/experimental/index.js";
+
+import type Token from "../Interface/Token.js";
+import type Interface from "../Interface/Worker.js";
+
 /**
  * @module Worker
  *
@@ -108,11 +113,6 @@ export default {
 			)
 			.handle(Request, Environment),
 } satisfies Interface as Interface;
-
-import type Token from "../Interface/Token.js";
-import type Interface from "../Interface/Worker.js";
-
-import type { JsonWebKey } from "@cloudflare/workers-types/experimental/index.js";
 
 export const { default: Redirect } = await import("../Function/Redirect.js");
 
