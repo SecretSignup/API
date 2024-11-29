@@ -6,6 +6,8 @@ import type { KVNamespace } from "@cloudflare/workers-types/experimental/index.j
  */
 export default interface Interface {
 	Identifier: string;
+
 	Secret: string;
+
 	Token: KVNamespace;
 }
