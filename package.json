@@ -29,7 +29,7 @@
 		"itty-router": "6.0.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20250129.0",
+		"@cloudflare/workers-types": "4.20250204.0",
 		"@playform/build": "0.2.1",
 		"@types/dotenv": "8.2.3",
 		"eslint": "9.19.0",
