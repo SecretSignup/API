@@ -32,7 +32,7 @@
 		"@cloudflare/workers-types": "4.20250204.0",
 		"@playform/build": "0.2.1",
 		"@types/dotenv": "8.2.3",
-		"eslint": "9.19.0",
+		"eslint": "9.20.0",
 		"miniflare": "3.20250129.0",
 		"wrangler": "3.107.3"
 	},
