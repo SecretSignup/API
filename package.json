@@ -34,7 +34,7 @@
 		"@types/dotenv": "8.2.3",
 		"eslint": "9.23.0",
 		"miniflare": "4.20250320.0",
-		"wrangler": "4.4.0"
+		"wrangler": "4.5.0"
 	},
 	"publishConfig": {
 		"access": "public",
