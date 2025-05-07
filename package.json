@@ -30,11 +30,11 @@
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "4.20250507.0",
-		"@playform/build": "0.2.3",
+		"@playform/build": "0.2.4",
 		"@types/dotenv": "8.2.3",
 		"eslint": "9.26.0",
-		"miniflare": "4.20250428.1",
-		"wrangler": "4.14.1"
+		"miniflare": "4.20250507.0",
+		"wrangler": "4.14.3"
 	},
 	"publishConfig": {
 		"access": "public",
