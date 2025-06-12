@@ -33,7 +33,7 @@
 		"@playform/build": "0.2.4",
 		"@types/dotenv": "8.2.3",
 		"eslint": "9.28.0",
-		"miniflare": "4.20250525.1",
+		"miniflare": "4.20250604.0",
 		"wrangler": "4.19.2"
 	},
 	"publishConfig": {
